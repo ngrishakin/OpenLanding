@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="openlending" verbose="1" configfailurepolicy="continue">
+
+    <parameter name="service" value="test"/>
+    <test enabled="true" name="openlending" preserve-order="true" thread-count="1" parallel="false">
+        <classes>
+             <class name="com.openlending.tests.HappyPath"></class>
+        </classes>
+    </test>
+</suite>
